@@ -1,0 +1,154 @@
+body {
+  background-color: #f7f1e3;
+}
+
+.info {
+  font-weight: 800;
+  font-size: calc(1rem + 2vmin);
+  line-height: calc((1rem + 2vmin) * 0.7);
+  padding-top: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  margin: calc(1rem + 2vmin);
+  pointer-events: none;
+}
+
+.info .small {
+  font-size: 0.6em;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.info.-number {
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+body {
+  transition: background-color 0.3s;
+}
+
+body.-mgyon {
+  background-color: #d1ccc0;
+  color: #474787;
+}
+body.-mgyon .info {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.-mgyon .canvas-shadow {
+  background-color: #474787;
+}
+
+body.-thunder {
+  background-color: #84817a;
+  color: #000;
+}
+body.-thunder .info {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.-thunder .canvas-shadow {
+  background-color: #000;
+}
+
+body.-drone {
+  background-color: #f7f1e3;
+  color: #cc8e35;
+}
+body.-drone .info {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.-drone .canvas-shadow {
+  background-color: #cc8e35;
+}
+
+body.-expi {
+  background-color: #cd6133;
+  color: #000;
+}
+body.-expi .info {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.-expi .canvas-shadow {
+  background-color: #000;
+}
+
+.swiper-slide {
+  display: flex;
+  border: none !important;
+}
+
+.canvas-container {
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.canvas-wrapper {
+}
+
+canvas {
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: block;
+  height: auto;
+  margin: 0;
+  display: block;
+  /*border-radius: 2px;*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 19px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: height 0.3s, color 0.3s;
+  z-index: 100;
+}
+
+.note a {
+  color: #333;
+}
+
+.note a:hover {
+  color: #000;
+}
+
+.note.-more {
+  bottom: 0;
+}
+
+.note.-how {
+  top: 0;
+}
+
+.canvas-shadow {
+  position: absolute;
+  height: 4px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0;
+  transition: opacity 0.3s 0.3s;
+  transform: translatex(-100vw);
+}
+
+.-active .canvas-shadow {
+  opacity: 1;
+}
+
+button.swiper-slide {
+  background-color: transparent;
+}
