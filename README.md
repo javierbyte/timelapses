@@ -3,4 +3,7 @@ I love to make timelapses. There is something special about seeing something tra
 
 If you want to make your own you can fork this repo, the `main.js` file contains configuration objects that should be easy to update. More documentation and examples to come soon.
 
+Sequencer lib 
+https://github.com/ertdfgcvb/Sequencer
+
 ![alt text](readme.png "Timelapses")
