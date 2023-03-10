@@ -246,7 +246,7 @@ function generateList(path, start, end, exceptions) {
     .map((el, elIdx) => {
       if (exceptions.includes(start + elIdx)) return null;
       return {
-        path: `${path}${start + elIdx}.jpg`,
+        path: `/timelapses/${path}${start + elIdx}.jpg`,
         photoId: start + elIdx
       };
     })
